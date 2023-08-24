@@ -7,23 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5CC7EB2A922B4900E72F20 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7EA2A922B4800E72F20 /* NetworkHelper.swift */; };
+		5F5CC7EE2A922B5C00E72F20 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5F5CC7ED2A922B5C00E72F20 /* Alamofire */; };
+		5F5CC7F02A922BB700E72F20 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7EF2A922BB700E72F20 /* LoginModel.swift */; };
+		5F5CC7F22A922BC300E72F20 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7F12A922BC300E72F20 /* LoginViewModel.swift */; };
+		5F5CC7F42A922BDC00E72F20 /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7F32A922BDC00E72F20 /* SignUpModel.swift */; };
+		5F5CC7F62A922BF500E72F20 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7F52A922BF500E72F20 /* SignUpViewModel.swift */; };
+		5F5CC7FA2A9236DB00E72F20 /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7F92A9236DB00E72F20 /* KeyChainHelper.swift */; };
+		5F5CC8002A924B5A00E72F20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC7FF2A924B5A00E72F20 /* Extensions.swift */; };
+		5F5CC8092A924D8200E72F20 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC8082A924D8200E72F20 /* HomeVC.swift */; };
+		5F5CC80B2A924D9400E72F20 /* VisitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC80A2A924D9400E72F20 /* VisitsVC.swift */; };
+		5F5CC80D2A924DA200E72F20 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC80C2A924DA200E72F20 /* MapVC.swift */; };
+		5F5CC80F2A924DB500E72F20 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC80E2A924DB500E72F20 /* MenuVC.swift */; };
+		5F5CC8112A924E5B00E72F20 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC8102A924E5B00E72F20 /* TabBarController.swift */; };
+		5F5CC8132A925AB600E72F20 /* VisitsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC8122A925AB600E72F20 /* VisitsModel.swift */; };
+		5F5CC8162A925C0000E72F20 /* VisitsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC8152A925C0000E72F20 /* VisitsCVC.swift */; };
+		5F5CC8182A9269BF00E72F20 /* VisitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5CC8172A9269BF00E72F20 /* VisitsViewModel.swift */; };
+		5F5CC81B2A928A6500E72F20 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F5CC81A2A928A6500E72F20 /* SDWebImage */; };
+		5F5CC81E2A92920D00E72F20 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F5CC81D2A92920D00E72F20 /* IQKeyboardManagerSwift */; };
+		5FD389992A8F84BA001B6D47 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FD389982A8F84BA001B6D47 /* Poppins-SemiBold.ttf */; };
+		5FD3899B2A8F8559001B6D47 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD3899A2A8F8559001B6D47 /* CustomTextField.swift */; };
+		5FD3899D2A8F9838001B6D47 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD3899C2A8F9838001B6D47 /* CustomButton.swift */; };
+		5FD389A12A8FA503001B6D47 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD389A02A8FA503001B6D47 /* SignUpVC.swift */; };
+		5FD389A32A8FACC0001B6D47 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FD389A22A8FACC0001B6D47 /* Poppins-Light.ttf */; };
 		5FE439CC2A8F63F80053CE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439CB2A8F63F80053CE18 /* AppDelegate.swift */; };
 		5FE439CE2A8F63F80053CE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439CD2A8F63F80053CE18 /* SceneDelegate.swift */; };
-		5FE439D02A8F63F80053CE18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439CF2A8F63F80053CE18 /* ViewController.swift */; };
-		5FE439D32A8F63F80053CE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439D12A8F63F80053CE18 /* Main.storyboard */; };
 		5FE439D52A8F63F90053CE18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439D42A8F63F90053CE18 /* Assets.xcassets */; };
 		5FE439D82A8F63F90053CE18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439D62A8F63F90053CE18 /* LaunchScreen.storyboard */; };
+		5FE439E12A8F64920053CE18 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439E02A8F64920053CE18 /* LoginVC.swift */; };
+		5FE439E32A8F64E00053CE18 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439E22A8F64E00053CE18 /* DesignSystem.swift */; };
+		5FE439EC2A8F68920053CE18 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5FE439EB2A8F68920053CE18 /* SnapKit */; };
+		5FE439EF2A8F6A550053CE18 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE439EE2A8F6A550053CE18 /* CustomView.swift */; };
+		5FE439F42A8F83510053CE18 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439F02A8F83510053CE18 /* Poppins-Bold.ttf */; };
+		5FE439F52A8F83510053CE18 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439F12A8F83510053CE18 /* Poppins-Regular.ttf */; };
+		5FE439F62A8F83510053CE18 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439F22A8F83510053CE18 /* Poppins-Medium.ttf */; };
+		E1F7ED4A2A939A0C0045B78A /* VisitsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */; };
+		E1F7ED4C2A939CEA0045B78A /* VisitsDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */; };
+		E1F7ED4E2A9645050045B78A /* MyAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */; };
+		E1F7ED512A96E5A90045B78A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E1F7ED502A96E5A90045B78A /* SwiftyJSON */; };
+		E1F7ED532A976BF10045B78A /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED522A976BF10045B78A /* MapCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5CC7EA2A922B4800E72F20 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		5F5CC7EF2A922BB700E72F20 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		5F5CC7F12A922BC300E72F20 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5F5CC7F32A922BDC00E72F20 /* SignUpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		5F5CC7F52A922BF500E72F20 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		5F5CC7F92A9236DB00E72F20 /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
+		5F5CC7FF2A924B5A00E72F20 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5F5CC8082A924D8200E72F20 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		5F5CC80A2A924D9400E72F20 /* VisitsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsVC.swift; sourceTree = "<group>"; };
+		5F5CC80C2A924DA200E72F20 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		5F5CC80E2A924DB500E72F20 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		5F5CC8102A924E5B00E72F20 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5F5CC8122A925AB600E72F20 /* VisitsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsModel.swift; sourceTree = "<group>"; };
+		5F5CC8152A925C0000E72F20 /* VisitsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsCVC.swift; sourceTree = "<group>"; };
+		5F5CC8172A9269BF00E72F20 /* VisitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsViewModel.swift; sourceTree = "<group>"; };
+		5FD389982A8F84BA001B6D47 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		5FD3899A2A8F8559001B6D47 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		5FD3899C2A8F9838001B6D47 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		5FD389A02A8FA503001B6D47 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		5FD389A22A8FACC0001B6D47 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
 		5FE439C82A8F63F80053CE18 /* travio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE439CB2A8F63F80053CE18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FE439CD2A8F63F80053CE18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5FE439CF2A8F63F80053CE18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5FE439D22A8F63F80053CE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FE439D42A8F63F90053CE18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FE439D72A8F63F90053CE18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FE439D92A8F63F90053CE18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FE439E02A8F64920053CE18 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5FE439E22A8F64E00053CE18 /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
+		5FE439EE2A8F6A550053CE18 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		5FE439F02A8F83510053CE18 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5FE439F12A8F83510053CE18 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		5FE439F22A8F83510053CE18 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailVC.swift; sourceTree = "<group>"; };
+		E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailCell.swift; sourceTree = "<group>"; };
+		E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIRouter.swift; sourceTree = "<group>"; };
+		E1F7ED522A976BF10045B78A /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +92,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5CC81B2A928A6500E72F20 /* SDWebImage in Frameworks */,
+				5F5CC81E2A92920D00E72F20 /* IQKeyboardManagerSwift in Frameworks */,
+				5FE439EC2A8F68920053CE18 /* SnapKit in Frameworks */,
+				E1F7ED512A96E5A90045B78A /* SwiftyJSON in Frameworks */,
+				5F5CC7EE2A922B5C00E72F20 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5CC7E82A90EFDC00E72F20 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5FE439E02A8F64920053CE18 /* LoginVC.swift */,
+				5F5CC7EF2A922BB700E72F20 /* LoginModel.swift */,
+				5F5CC7F12A922BC300E72F20 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5F5CC7E92A90EFE500E72F20 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				5FD389A02A8FA503001B6D47 /* SignUpVC.swift */,
+				5F5CC7F52A922BF500E72F20 /* SignUpViewModel.swift */,
+				5F5CC7F32A922BDC00E72F20 /* SignUpModel.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		5F5CC7FB2A923C1300E72F20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC7EA2A922B4800E72F20 /* NetworkHelper.swift */,
+				E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */,
+				5F5CC7F92A9236DB00E72F20 /* KeyChainHelper.swift */,
+				5F5CC7FF2A924B5A00E72F20 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5F5CC7FC2A92496F00E72F20 /* Visit */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC8072A924D6900E72F20 /* TabBar */,
+			);
+			path = Visit;
+			sourceTree = "<group>";
+		};
+		5F5CC8072A924D6900E72F20 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC8102A924E5B00E72F20 /* TabBarController.swift */,
+				5F5CC8082A924D8200E72F20 /* HomeVC.swift */,
+				5F5CC80E2A924DB500E72F20 /* MenuVC.swift */,
+				E1F7ED542A976BF40045B78A /* Map */,
+				5F5CC8142A925AEC00E72F20 /* Visits */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		5F5CC8142A925AEC00E72F20 /* Visits */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */,
+				E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */,
+				5F5CC80A2A924D9400E72F20 /* VisitsVC.swift */,
+				5F5CC8152A925C0000E72F20 /* VisitsCVC.swift */,
+				5F5CC8122A925AB600E72F20 /* VisitsModel.swift */,
+				5F5CC8172A9269BF00E72F20 /* VisitsViewModel.swift */,
+			);
+			path = Visits;
+			sourceTree = "<group>";
+		};
 		5FE439BF2A8F63F80053CE18 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +188,65 @@
 			children = (
 				5FE439CB2A8F63F80053CE18 /* AppDelegate.swift */,
 				5FE439CD2A8F63F80053CE18 /* SceneDelegate.swift */,
-				5FE439CF2A8F63F80053CE18 /* ViewController.swift */,
-				5FE439D12A8F63F80053CE18 /* Main.storyboard */,
-				5FE439D42A8F63F90053CE18 /* Assets.xcassets */,
+				5FE439ED2A8F6A3B0053CE18 /* Customs */,
+				5FE439E42A8F64E80053CE18 /* DesignSystem */,
+				5FE439DF2A8F647F0053CE18 /* Application */,
+				5F5CC7FB2A923C1300E72F20 /* Helpers */,
 				5FE439D62A8F63F90053CE18 /* LaunchScreen.storyboard */,
+				5FE439D42A8F63F90053CE18 /* Assets.xcassets */,
 				5FE439D92A8F63F90053CE18 /* Info.plist */,
 			);
 			path = travio;
+			sourceTree = "<group>";
+		};
+		5FE439DF2A8F647F0053CE18 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC7E82A90EFDC00E72F20 /* Login */,
+				5F5CC7E92A90EFE500E72F20 /* Sign Up */,
+				5F5CC7FC2A92496F00E72F20 /* Visit */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5FE439E42A8F64E80053CE18 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				5FE439E22A8F64E00053CE18 /* DesignSystem.swift */,
+				5FE439E92A8F65600053CE18 /* FontTypes */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		5FE439E92A8F65600053CE18 /* FontTypes */ = {
+			isa = PBXGroup;
+			children = (
+				5FE439F02A8F83510053CE18 /* Poppins-Bold.ttf */,
+				5FE439F22A8F83510053CE18 /* Poppins-Medium.ttf */,
+				5FE439F12A8F83510053CE18 /* Poppins-Regular.ttf */,
+				5FD389982A8F84BA001B6D47 /* Poppins-SemiBold.ttf */,
+				5FD389A22A8FACC0001B6D47 /* Poppins-Light.ttf */,
+			);
+			path = FontTypes;
+			sourceTree = "<group>";
+		};
+		5FE439ED2A8F6A3B0053CE18 /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				5FE439EE2A8F6A550053CE18 /* CustomView.swift */,
+				5FD3899A2A8F8559001B6D47 /* CustomTextField.swift */,
+				5FD3899C2A8F9838001B6D47 /* CustomButton.swift */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		E1F7ED542A976BF40045B78A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC80C2A924DA200E72F20 /* MapVC.swift */,
+				E1F7ED522A976BF10045B78A /* MapCollectionViewCell.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +265,13 @@
 			dependencies = (
 			);
 			name = travio;
+			packageProductDependencies = (
+				5FE439EB2A8F68920053CE18 /* SnapKit */,
+				5F5CC7ED2A922B5C00E72F20 /* Alamofire */,
+				5F5CC81A2A928A6500E72F20 /* SDWebImage */,
+				5F5CC81D2A92920D00E72F20 /* IQKeyboardManagerSwift */,
+				E1F7ED502A96E5A90045B78A /* SwiftyJSON */,
+			);
 			productName = travio;
 			productReference = 5FE439C82A8F63F80053CE18 /* travio.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +300,13 @@
 				Base,
 			);
 			mainGroup = 5FE439BF2A8F63F80053CE18;
+			packageReferences = (
+				5FE439EA2A8F68920053CE18 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5F5CC7EC2A922B5C00E72F20 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5F5CC8192A928A6500E72F20 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5F5CC81C2A92920D00E72F20 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E1F7ED4F2A96E5A90045B78A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 5FE439C92A8F63F80053CE18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +321,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FD389A32A8FACC0001B6D47 /* Poppins-Light.ttf in Resources */,
 				5FE439D82A8F63F90053CE18 /* LaunchScreen.storyboard in Resources */,
+				5FD389992A8F84BA001B6D47 /* Poppins-SemiBold.ttf in Resources */,
+				5FE439F42A8F83510053CE18 /* Poppins-Bold.ttf in Resources */,
 				5FE439D52A8F63F90053CE18 /* Assets.xcassets in Resources */,
-				5FE439D32A8F63F80053CE18 /* Main.storyboard in Resources */,
+				5FE439F52A8F83510053CE18 /* Poppins-Regular.ttf in Resources */,
+				5FE439F62A8F83510053CE18 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +338,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FE439D02A8F63F80053CE18 /* ViewController.swift in Sources */,
+				5F5CC8132A925AB600E72F20 /* VisitsModel.swift in Sources */,
+				5FD389A12A8FA503001B6D47 /* SignUpVC.swift in Sources */,
+				5F5CC7F62A922BF500E72F20 /* SignUpViewModel.swift in Sources */,
+				5F5CC8092A924D8200E72F20 /* HomeVC.swift in Sources */,
+				5F5CC8162A925C0000E72F20 /* VisitsCVC.swift in Sources */,
+				E1F7ED4A2A939A0C0045B78A /* VisitsDetailVC.swift in Sources */,
+				5F5CC7EB2A922B4900E72F20 /* NetworkHelper.swift in Sources */,
+				5F5CC80D2A924DA200E72F20 /* MapVC.swift in Sources */,
+				5F5CC7F22A922BC300E72F20 /* LoginViewModel.swift in Sources */,
+				5F5CC8182A9269BF00E72F20 /* VisitsViewModel.swift in Sources */,
+				5FE439EF2A8F6A550053CE18 /* CustomView.swift in Sources */,
+				5F5CC80B2A924D9400E72F20 /* VisitsVC.swift in Sources */,
+				E1F7ED4E2A9645050045B78A /* MyAPIRouter.swift in Sources */,
+				5F5CC7FA2A9236DB00E72F20 /* KeyChainHelper.swift in Sources */,
+				5FE439E32A8F64E00053CE18 /* DesignSystem.swift in Sources */,
+				5FD3899B2A8F8559001B6D47 /* CustomTextField.swift in Sources */,
+				5F5CC7F02A922BB700E72F20 /* LoginModel.swift in Sources */,
+				5F5CC8112A924E5B00E72F20 /* TabBarController.swift in Sources */,
+				E1F7ED4C2A939CEA0045B78A /* VisitsDetailCell.swift in Sources */,
+				5F5CC7F42A922BDC00E72F20 /* SignUpModel.swift in Sources */,
+				E1F7ED532A976BF10045B78A /* MapCollectionViewCell.swift in Sources */,
 				5FE439CC2A8F63F80053CE18 /* AppDelegate.swift in Sources */,
+				5F5CC8002A924B5A00E72F20 /* Extensions.swift in Sources */,
+				5F5CC80F2A924DB500E72F20 /* MenuVC.swift in Sources */,
+				5FD3899D2A8F9838001B6D47 /* CustomButton.swift in Sources */,
 				5FE439CE2A8F63F80053CE18 /* SceneDelegate.swift in Sources */,
+				5FE439E12A8F64920053CE18 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5FE439D12A8F63F80053CE18 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5FE439D22A8F63F80053CE18 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5FE439D62A8F63F90053CE18 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -285,23 +501,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85G7VWD2UU;
+				DEVELOPMENT_TEAM = Y2YR5LPPR9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = travio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DogucanDurgun.travio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevvalcakiroglu.travio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,23 +533,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85G7VWD2UU;
+				DEVELOPMENT_TEAM = Y2YR5LPPR9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = travio/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.DogucanDurgun.travio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sevvalcakiroglu.travio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,6 +582,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F5CC7EC2A922B5C00E72F20 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		5F5CC8192A928A6500E72F20 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		5F5CC81C2A92920D00E72F20 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		5FE439EA2A8F68920053CE18 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E1F7ED4F2A96E5A90045B78A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F5CC7ED2A922B5C00E72F20 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F5CC7EC2A922B5C00E72F20 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5F5CC81A2A928A6500E72F20 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F5CC8192A928A6500E72F20 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		5F5CC81D2A92920D00E72F20 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F5CC81C2A92920D00E72F20 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		5FE439EB2A8F68920053CE18 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FE439EA2A8F68920053CE18 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E1F7ED502A96E5A90045B78A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1F7ED4F2A96E5A90045B78A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FE439C02A8F63F80053CE18 /* Project object */;
 }

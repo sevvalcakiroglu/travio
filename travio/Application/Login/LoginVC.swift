@@ -2,24 +2,19 @@
 //  LoginVC.swift
 //  travio
 //
-//  Created by Doğucan Durgun on 18.08.2023.
+//  Created by Şevval Çakıroğlu on 18.08.2023.
 //
 
 import SnapKit
 import UIKit
 
 class LoginVC: UIViewController {
-    
-    
     // login view model instance
-    private lazy var LoginViewModelInstance:LoginViewModel = {
+    private lazy var LoginViewModelInstance: LoginViewModel = {
         let view = LoginViewModel()
         
         return view
     }()
-    
-    
-    
     
     private lazy var logo: UIImageView = {
         let logo = UIImageView()
@@ -37,8 +32,8 @@ class LoginVC: UIViewController {
     private lazy var welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "Welcome to Travio"
-        label.font = Font.poppins(fontType: 500, size: 24).font
-        label.textColor = Colors.gri.color
+        label.font =  Font.medium(size: 24).font
+        label.textColor = Color.darkGray.color
         
         return label
     }()
@@ -47,7 +42,8 @@ class LoginVC: UIViewController {
         let view = CustomTextField()
         view.labelText = "Email"
         view.placeholderName = "bilgeadam@gmail.com"
-
+        view.txtField.text = "furk@n.dev"
+        
         return view
     }()
     
@@ -55,7 +51,9 @@ class LoginVC: UIViewController {
         let view = CustomTextField()
         view.labelText = "Password"
         view.placeholderName = "*********"
-
+        view.txtField.text = "123123123"
+        view.txtField.isSecureTextEntry = true
+        
         return view
     }()
     
@@ -63,21 +61,20 @@ class LoginVC: UIViewController {
         let btn = CustomButton()
         btn.labelText = "Login"
         
-        
         btn.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         return btn
     }()
     
     private lazy var forgotStackView: UIStackView = {
         let stack = UIStackView()
-       
+        
         return stack
     }()
     
     private lazy var accLabel: UILabel = {
         let label = UILabel()
         label.text = "Don't have any account?"
-        label.font = Font.poppins(fontType: 600, size: 14).font
+        label.font = Font.semiBold(size: 14).font
         
         return label
     }()
@@ -85,7 +82,7 @@ class LoginVC: UIViewController {
     private lazy var signUp: UIButton = {
         let button = UIButton()
         button.setTitle(" Sign Up", for: .normal)
-        button.titleLabel?.font = Font.poppins(fontType: 600, size: 14).font
+        button.titleLabel?.font =  Font.semiBold(size: 14).font
         button.setTitleColor(.black, for: .normal)
         
         button.addTarget(self, action: #selector(signUpTapped), for: .touchUpInside)
@@ -95,10 +92,10 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = Colors.turkuaz.color
+        view.backgroundColor =  Color.turquoise.color
         setupViews()
     }
- 
+    
     func setupViews() {
         view.addSubview(logo)
         view.addSubview(retangle)
@@ -161,24 +158,34 @@ class LoginVC: UIViewController {
     
     @objc func signUpTapped() {
         let vc = SignUpVC()
-        
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    
-    
     @objc func loginButtonTapped() {
-        
-        guard let email = txtMailView.txtField.text else {return}
-        guard let password = txtPasswordView.txtField.text else {return}
+        guard let email = txtMailView.txtField.text else { return }
+        guard let password = txtPasswordView.txtField.text else { return }
         
         let data = LoginInfo(email: email, password: password)
         
-        LoginViewModelInstance.login(input: data) {
-            print("başarılı giriş")
+        LoginViewModelInstance.loginNew(input: data) { error in
+            if let error = error {
+                let alert = UIAlertController(title: "Hata!", message: "Kullanıcı Adı veya Şifre Hatalı", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Yeniden Dene", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            } else {
+                let tabBarController = TabBarController()
+                self.navigationController?.pushViewController(tabBarController, animated: true)
+            }
         }
-        
+//        LoginViewModelInstance.login(input: data) { error in
+//            if let error = error {
+//                let alert = UIAlertController(title: "Hata!", message: "Kullanıcı Adı veya Şifre Hatalı", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "Yeniden Dene", style: .default, handler: nil))
+//                self.present(alert, animated: true)
+//            } else {
+//                let tabBarController = TabBarController()
+//                self.navigationController?.pushViewController(tabBarController, animated: true)
+//            }
+//        }
     }
-    
-    
 }

@@ -2,19 +2,31 @@
 //  CustomView.swift
 //  travio
 //
-//  Created by Doğucan Durgun on 18.08.2023.
+//  Created by Şevval Çakıroğlu on 18.08.2023.
 //
 
 import UIKit
 
 class CustomView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        backgroundColor = Color.lightGray.color
     }
-    */
-
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let maskPath = UIBezierPath(roundedRect: bounds,
+                                    byRoundingCorners: [.topLeft], // Burada istediğin köşeyi seçebilirsin
+                                    cornerRadii: CGSize(width: 80, height: 80))
+        
+        let shape = CAShapeLayer()
+        shape.path = maskPath.cgPath
+        layer.mask = shape
+    }
 }

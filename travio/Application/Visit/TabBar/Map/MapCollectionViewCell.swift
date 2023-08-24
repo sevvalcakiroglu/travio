@@ -7,6 +7,6 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class MapCollectionViewCell: UICollectionViewCell {
     
 }

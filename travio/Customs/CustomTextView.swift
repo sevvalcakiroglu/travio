@@ -1,21 +1,18 @@
 //
-//  CustomTextField.swift
+//  CustomTextView.swift
 //  travio
 //
-//  Created by Şevval Çakıroğlu on 18.08.2023.
+//  Created by Şevval Çakıroğlu on 24.08.2023.
 //
+
+
 
 import SnapKit
 import UIKit
 
-class CustomTextField: UIView {
+class CustomTextView: UIView {
     
 
-    var placeholderName = "" {
-        didSet{
-            txtField.placeholder = placeholderName
-        }
-    }
     
     var labelText:String = "" {
         didSet {
@@ -37,9 +34,9 @@ class CustomTextField: UIView {
         return label
     }()
     
-    lazy var txtField: UITextField = {
-        let txt = UITextField()
-        txt.placeholder = "placeholder"
+    lazy var txtView: UITextView = {
+        let txt = UITextView()
+
         txt.font = Font.light(size: 12).font
         txt.autocorrectionType = .no
         txt.autocapitalizationType = .none
@@ -61,7 +58,7 @@ class CustomTextField: UIView {
     }
     
     func addShadow() {
-        layer.shadowColor = Color.darkGray.color.cgColor 
+        layer.shadowColor = Color.darkGray.color.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)
         layer.shadowOpacity = 0.15
         layer.shadowRadius = 4
@@ -73,7 +70,7 @@ class CustomTextField: UIView {
     func setupViews() {
         addShadow()
         addSubview(label)
-        addSubview(txtField)
+        addSubview(txtView)
         setupLayouts()
     }
     
@@ -84,7 +81,7 @@ class CustomTextField: UIView {
             make.trailing.equalToSuperview().offset(100)
         }
         
-        txtField.snp.makeConstraints { make in
+        txtView.snp.makeConstraints { make in
             make.top.equalTo(label.snp.bottom).offset(8)
             make.leading.equalToSuperview().offset(12)
             make.trailing.equalToSuperview().offset(-12)
@@ -92,3 +89,4 @@ class CustomTextField: UIView {
         }
     }
 }
+

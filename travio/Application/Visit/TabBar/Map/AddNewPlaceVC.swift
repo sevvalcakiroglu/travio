@@ -45,6 +45,30 @@ class AddNewPlaceVC: UIViewController {
         return view
     }()
     
+    private lazy var collectionView:UICollectionView = {
+
+        //MARK: -- CollectionView arayüzü için sağlanan layout protocolü.
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        layout.minimumInteritemSpacing = 0
+        layout.scrollDirection = .horizontal
+        
+        
+       
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        cv.delegate = self
+        cv.dataSource = self
+        cv.backgroundColor = .clear
+        cv.contentInsetAdjustmentBehavior = .never
+        cv.showsHorizontalScrollIndicator = false
+        cv.isPagingEnabled = true
+        
+        cv.register(AddNewPlaceCVC.self, forCellWithReuseIdentifier: "CustomCell")
+      
+        return cv
+        
+    }()
+    
     private lazy var addPlaceBtn: CustomButton = {
         let btn = CustomButton()
         btn.labelText = "Add Place"
@@ -57,6 +81,9 @@ class AddNewPlaceVC: UIViewController {
     }()
     
 
+    override func viewDidLayoutSubviews() {
+        collectionView.roundCorners(corners: [.topRight,.topLeft,.bottomLeft], radius: 16)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +100,7 @@ class AddNewPlaceVC: UIViewController {
                          placeName,
                          visitDescription,
                          country,
-                         addPlaceBtn)
+                         addPlaceBtn,collectionView)
         
         setupLayout()
         
@@ -109,10 +136,17 @@ class AddNewPlaceVC: UIViewController {
             make.bottom.equalToSuperview().offset(-325)
         })
         
-        addPlaceBtn.snp.makeConstraints({make in
-            make.top.equalTo(country.snp.bottom).offset(247)
+        collectionView.snp.makeConstraints({make in
+            make.top.equalTo(country.snp.bottom).offset(16)
             make.leading.equalToSuperview().offset(24)
-            make.trailing.equalToSuperview().offset(-24)
+            make.trailing.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-94)
+        })
+        
+        addPlaceBtn.snp.makeConstraints({make in
+            make.top.equalTo(collectionView.snp.bottom).offset(16)
+            make.leading.equalToSuperview().offset(24)
+            make.trailing.equalToSuperview()
             make.bottom.equalToSuperview().offset(-24)
         })
         
@@ -120,4 +154,36 @@ class AddNewPlaceVC: UIViewController {
     }
     
 
+}
+
+
+extension AddNewPlaceVC:UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let size = CGSize(width: 269, height: 215)
+        return size
+    }
+    
+    
+}
+
+
+extension AddNewPlaceVC:UICollectionViewDataSource{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCell", for: indexPath) as? AddNewPlaceCVC else { return UICollectionViewCell() }
+        
+        return cell
+    }
+    
+    
+    
+    
 }

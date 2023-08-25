@@ -27,12 +27,13 @@ public enum MyAPIRouter: URLRequestConvertible {
         case postRegister(parameters: [String: Any])
         case postUserLogin(parameters: [String: Any])
         case getUser
-        case getListTravel
+        case getListTravel(params:Parameters)
         case getTravel(travelId:String)
         case updateTravel(travelId:String)
         case deleteTravel(travelId:String)
         case getAllGalleries(travelId: String)
         case deleteGalleries(travelId: String, imageId:String)
+        case getAllPlace(params:Parameters)
     
 //    var authToken: String{
 //        
@@ -43,7 +44,7 @@ public enum MyAPIRouter: URLRequestConvertible {
             switch self {
             case .postUserLogin, .postRegister:
                 return .post
-            case .getUser, .getListTravel, .getTravel, .getAllGalleries:
+            case .getUser, .getListTravel, .getTravel, .getAllGalleries, .getAllPlace:
                 return .get
             case .updateTravel:
                 return .put
@@ -62,12 +63,14 @@ public enum MyAPIRouter: URLRequestConvertible {
             case .getUser:
                 return "/v1/me"
             case .getListTravel:
-                return "/v1/travels?page=1&limit=10"
+                return "/v1/visits"
             case .getTravel(let travelId), .updateTravel(let travelId),
                     .deleteTravel(let travelId), .getAllGalleries(let travelId):
                 return "/v1/travels/\(travelId)"
             case .deleteGalleries(let travelId, let imageId):
                 return "/v1/galleries/\(travelId)/\(imageId)"
+            case .getAllPlace:
+                return "/v1/places"
 
             }
         }
@@ -78,7 +81,8 @@ public enum MyAPIRouter: URLRequestConvertible {
 //                    .getTravel,.updateTravel,
 //                    .deleteTravel,.getAllGalleries,.deleteGalleries:
 //                return nil
-            case .postRegister(let parameters), .postUserLogin(let parameters):
+          
+            case .getAllPlace(let parameters), .postRegister(let parameters), .postUserLogin(let parameters), .getListTravel(let parameters):
                 return parameters
             default :
                 return [:]
@@ -88,7 +92,7 @@ public enum MyAPIRouter: URLRequestConvertible {
     var headers: HTTPHeaders {
         
         switch self {
-        case .postUserLogin, .postRegister:
+        case .postUserLogin, .postRegister, .getAllPlace:
             return [:]
         case .getListTravel, .getUser, .getTravel, .updateTravel, .deleteTravel,
                 .getAllGalleries, .deleteGalleries:

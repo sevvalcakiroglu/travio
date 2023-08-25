@@ -43,6 +43,9 @@
 		5FE439F62A8F83510053CE18 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE439F22A8F83510053CE18 /* Poppins-Medium.ttf */; };
 		E10976EF2A9784340058DA0B /* AddNewPlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976EE2A9784340058DA0B /* AddNewPlaceVC.swift */; };
 		E10976F12A9788430058DA0B /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F02A9788430058DA0B /* CustomTextView.swift */; };
+		E10976F32A987D840058DA0B /* AddNewPlaceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F22A987D840058DA0B /* AddNewPlaceCVC.swift */; };
+		E10976F52A98BF270058DA0B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F42A98BF270058DA0B /* MapViewModel.swift */; };
+		E10976F72A98C13A0058DA0B /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F62A98C13A0058DA0B /* MapModel.swift */; };
 		E1F7ED4A2A939A0C0045B78A /* VisitsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */; };
 		E1F7ED4C2A939CEA0045B78A /* VisitsDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */; };
 		E1F7ED4E2A9645050045B78A /* MyAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */; };
@@ -85,6 +88,9 @@
 		5FE439F22A8F83510053CE18 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		E10976EE2A9784340058DA0B /* AddNewPlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceVC.swift; sourceTree = "<group>"; };
 		E10976F02A9788430058DA0B /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		E10976F22A987D840058DA0B /* AddNewPlaceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceCVC.swift; sourceTree = "<group>"; };
+		E10976F42A98BF270058DA0B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		E10976F62A98C13A0058DA0B /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailVC.swift; sourceTree = "<group>"; };
 		E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailCell.swift; sourceTree = "<group>"; };
 		E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIRouter.swift; sourceTree = "<group>"; };
@@ -249,8 +255,11 @@
 			isa = PBXGroup;
 			children = (
 				5F5CC80C2A924DA200E72F20 /* MapVC.swift */,
-				E10976EE2A9784340058DA0B /* AddNewPlaceVC.swift */,
 				E1F7ED522A976BF10045B78A /* MapCollectionViewCell.swift */,
+				E10976F42A98BF270058DA0B /* MapViewModel.swift */,
+				E10976F62A98C13A0058DA0B /* MapModel.swift */,
+				E10976EE2A9784340058DA0B /* AddNewPlaceVC.swift */,
+				E10976F22A987D840058DA0B /* AddNewPlaceCVC.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E10976F52A98BF270058DA0B /* MapViewModel.swift in Sources */,
 				5F5CC8132A925AB600E72F20 /* VisitsModel.swift in Sources */,
 				5FD389A12A8FA503001B6D47 /* SignUpVC.swift in Sources */,
 				5F5CC7F62A922BF500E72F20 /* SignUpViewModel.swift in Sources */,
@@ -359,6 +369,7 @@
 				E1F7ED4E2A9645050045B78A /* MyAPIRouter.swift in Sources */,
 				5F5CC7FA2A9236DB00E72F20 /* KeyChainHelper.swift in Sources */,
 				5FE439E32A8F64E00053CE18 /* DesignSystem.swift in Sources */,
+				E10976F32A987D840058DA0B /* AddNewPlaceCVC.swift in Sources */,
 				5FD3899B2A8F8559001B6D47 /* CustomTextField.swift in Sources */,
 				5F5CC7F02A922BB700E72F20 /* LoginModel.swift in Sources */,
 				5F5CC8112A924E5B00E72F20 /* TabBarController.swift in Sources */,
@@ -366,6 +377,7 @@
 				5F5CC7F42A922BDC00E72F20 /* SignUpModel.swift in Sources */,
 				E1F7ED532A976BF10045B78A /* MapCollectionViewCell.swift in Sources */,
 				5FE439CC2A8F63F80053CE18 /* AppDelegate.swift in Sources */,
+				E10976F72A98C13A0058DA0B /* MapModel.swift in Sources */,
 				5F5CC8002A924B5A00E72F20 /* Extensions.swift in Sources */,
 				E10976F12A9788430058DA0B /* CustomTextView.swift in Sources */,
 				5F5CC80F2A924DB500E72F20 /* MenuVC.swift in Sources */,

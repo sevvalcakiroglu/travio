@@ -8,6 +8,7 @@
 import Foundation
 
 class LoginViewModel {
+    
     func login(input: LoginInfo, callback: @escaping (Error?) -> Void) {
         let url = "https://api.iosclass.live/v1/auth/login"
 

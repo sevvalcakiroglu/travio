@@ -26,7 +26,7 @@ class VisitsViewModel {
                 switch result {
                 case .success(let travels):
                     self.arr = travels
-           
+                    
                     callback(travels)
                 case .failure(let error):
                     print("Hata:", error.localizedDescription)
@@ -62,5 +62,27 @@ class VisitsViewModel {
     
     
     
+    func getData2( callback: @escaping (TravelResponse) -> Void){
+        //        let url = "https://api.iosclass.live/v1/travels?page=1&limit=10"
+        
+        let params = ["page":1,"limit":10]
+        
+        
+        NetworkingHelper.shared.objectRequestNew(request:MyAPIRouter.getListTravel(params: params) , callback: { (result: Result<TravelResponse, Error>) in
+            switch result {
+            case .success(let travels):
+                self.arr = travels
+                callback(travels)
+            case .failure(let error):
+                print("Hata:", error.localizedDescription)
+            }
+        })
+    }
+    
     
 }
+ 
+    
+    
+    
+

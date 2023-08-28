@@ -110,7 +110,7 @@ class VisitsDetailVC: UIViewController {
     
     private lazy var activityIndicator: UIActivityIndicatorView = {
         let ac = UIActivityIndicatorView()
-        ac.style = .whiteLarge
+        ac.style =  UIActivityIndicatorView.Style.large//.whiteLarge
         return ac
     }()
     

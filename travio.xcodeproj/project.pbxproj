@@ -46,6 +46,10 @@
 		E10976F32A987D840058DA0B /* AddNewPlaceCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F22A987D840058DA0B /* AddNewPlaceCVC.swift */; };
 		E10976F52A98BF270058DA0B /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F42A98BF270058DA0B /* MapViewModel.swift */; };
 		E10976F72A98C13A0058DA0B /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F62A98C13A0058DA0B /* MapModel.swift */; };
+		E10976F92A9BD1410058DA0B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976F82A9BD1410058DA0B /* HomeCollectionViewCell.swift */; };
+		E10976FB2A9BD1730058DA0B /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976FA2A9BD1730058DA0B /* HomeTableViewCell.swift */; };
+		E10976FE2A9BD1BC0058DA0B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976FD2A9BD1BC0058DA0B /* HomeViewModel.swift */; };
+		E10977002A9BD1C80058DA0B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10976FF2A9BD1C80058DA0B /* HomeModel.swift */; };
 		E1F7ED4A2A939A0C0045B78A /* VisitsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */; };
 		E1F7ED4C2A939CEA0045B78A /* VisitsDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */; };
 		E1F7ED4E2A9645050045B78A /* MyAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */; };
@@ -91,6 +95,10 @@
 		E10976F22A987D840058DA0B /* AddNewPlaceCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaceCVC.swift; sourceTree = "<group>"; };
 		E10976F42A98BF270058DA0B /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		E10976F62A98C13A0058DA0B /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		E10976F82A9BD1410058DA0B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E10976FA2A9BD1730058DA0B /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E10976FD2A9BD1BC0058DA0B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E10976FF2A9BD1C80058DA0B /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		E1F7ED492A939A0C0045B78A /* VisitsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailVC.swift; sourceTree = "<group>"; };
 		E1F7ED4B2A939CEA0045B78A /* VisitsDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsDetailCell.swift; sourceTree = "<group>"; };
 		E1F7ED4D2A9645050045B78A /* MyAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAPIRouter.swift; sourceTree = "<group>"; };
@@ -156,8 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				5F5CC8102A924E5B00E72F20 /* TabBarController.swift */,
-				5F5CC8082A924D8200E72F20 /* HomeVC.swift */,
 				5F5CC80E2A924DB500E72F20 /* MenuVC.swift */,
+				E10976FC2A9BD17C0058DA0B /* Home */,
 				E1F7ED542A976BF40045B78A /* Map */,
 				5F5CC8142A925AEC00E72F20 /* Visits */,
 			);
@@ -249,6 +257,18 @@
 				5FD3899C2A8F9838001B6D47 /* CustomButton.swift */,
 			);
 			path = Customs;
+			sourceTree = "<group>";
+		};
+		E10976FC2A9BD17C0058DA0B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F5CC8082A924D8200E72F20 /* HomeVC.swift */,
+				E10976F82A9BD1410058DA0B /* HomeCollectionViewCell.swift */,
+				E10976FA2A9BD1730058DA0B /* HomeTableViewCell.swift */,
+				E10976FD2A9BD1BC0058DA0B /* HomeViewModel.swift */,
+				E10976FF2A9BD1C80058DA0B /* HomeModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E1F7ED542A976BF40045B78A /* Map */ = {
@@ -373,9 +393,11 @@
 				5FD3899B2A8F8559001B6D47 /* CustomTextField.swift in Sources */,
 				5F5CC7F02A922BB700E72F20 /* LoginModel.swift in Sources */,
 				5F5CC8112A924E5B00E72F20 /* TabBarController.swift in Sources */,
+				E10977002A9BD1C80058DA0B /* HomeModel.swift in Sources */,
 				E1F7ED4C2A939CEA0045B78A /* VisitsDetailCell.swift in Sources */,
 				5F5CC7F42A922BDC00E72F20 /* SignUpModel.swift in Sources */,
 				E1F7ED532A976BF10045B78A /* MapCollectionViewCell.swift in Sources */,
+				E10976FE2A9BD1BC0058DA0B /* HomeViewModel.swift in Sources */,
 				5FE439CC2A8F63F80053CE18 /* AppDelegate.swift in Sources */,
 				E10976F72A98C13A0058DA0B /* MapModel.swift in Sources */,
 				5F5CC8002A924B5A00E72F20 /* Extensions.swift in Sources */,
@@ -385,6 +407,8 @@
 				5FE439CE2A8F63F80053CE18 /* SceneDelegate.swift in Sources */,
 				5FE439E12A8F64920053CE18 /* LoginVC.swift in Sources */,
 				E10976EF2A9784340058DA0B /* AddNewPlaceVC.swift in Sources */,
+				E10976FB2A9BD1730058DA0B /* HomeTableViewCell.swift in Sources */,
+				E10976F92A9BD1410058DA0B /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

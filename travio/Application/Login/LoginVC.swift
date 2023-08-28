@@ -92,11 +92,12 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor =  Color.turquoise.color
+
         setupViews()
     }
     
     func setupViews() {
+        view.backgroundColor =  Color.turquoise.color
         view.addSubview(logo)
         view.addSubview(retangle)
         retangle.addSubview(welcomeLabel)
